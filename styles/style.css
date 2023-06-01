@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 880px;
+  min-width: 800px;
   height: 100%;
   margin: 0;
 }
