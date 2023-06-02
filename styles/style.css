@@ -18,7 +18,18 @@ body {
   margin: 0;
 }
 
-video {
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.main__video {
   position: absolute;
   top: 0;
   right: 0;
@@ -32,13 +43,23 @@ video {
 .page__heading {
   z-index: 1;
   flex-grow: 1;
+  max-width: 739px;
   margin: 60px auto 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 116px;
   letter-spacing: 0.035em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.page__heading:hover {
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+h1::after {
+  content: "*";
 }
 
 .page__heading:hover::before {
@@ -47,13 +68,12 @@ video {
   top: 181px;
   right: 22px;
   z-index: 1;
-  width: 742px;
-  height: 142px;
   margin: 0px;
   border: 2px solid #000;
   border-radius: 20px;
   padding: 36px 44px;
   box-shadow: 0px 18px #000;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 35px;
